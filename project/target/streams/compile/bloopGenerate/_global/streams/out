@@ -1,0 +1,4 @@
+[debug] [order-service-build] Classpath dependencies List()
+[debug] [order-service-build] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'order-service-build' to '/home/joao/Documents/Work/recipe/order-service/project/.bloop/order-service-build.json'
+[success] Generated .bloop/order-service-build.json
