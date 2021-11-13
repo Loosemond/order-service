@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "order-service-build",
-        "directory": "/home/joao/Documents/Work/recipe/order-service/project",
-        "workspaceDir": "/home/joao/Documents/Work/recipe/order-service/project",
+        "directory": "/home/joao/Documents/Work/order-service/project",
+        "workspaceDir": "/home/joao/Documents/Work/order-service/project",
         "sources": [
-            "/home/joao/Documents/Work/recipe/order-service/project/src/main/scala",
-            "/home/joao/Documents/Work/recipe/order-service/project/src/main/scala-2.12",
-            "/home/joao/Documents/Work/recipe/order-service/project/src/main/scala-2",
-            "/home/joao/Documents/Work/recipe/order-service/project/src/main/java",
-            "/home/joao/Documents/Work/recipe/order-service/project/src/main/scala-sbt-1.0",
-            "/home/joao/Documents/Work/recipe/order-service/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/home/joao/Documents/Work/order-service/project/src/main/scala",
+            "/home/joao/Documents/Work/order-service/project/src/main/scala-2.12",
+            "/home/joao/Documents/Work/order-service/project/src/main/scala-2",
+            "/home/joao/Documents/Work/order-service/project/src/main/java",
+            "/home/joao/Documents/Work/order-service/project/src/main/scala-sbt-1.0",
+            "/home/joao/Documents/Work/order-service/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -129,11 +129,11 @@
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.3.3/config-1.3.3.jar"
         ],
-        "out": "/home/joao/Documents/Work/recipe/order-service/project/.bloop/order-service-build",
-        "classesDir": "/home/joao/Documents/Work/recipe/order-service/project/.bloop/order-service-build/scala-2.12/sbt-1.0/classes",
+        "out": "/home/joao/Documents/Work/order-service/project/.bloop/order-service-build",
+        "classesDir": "/home/joao/Documents/Work/order-service/project/.bloop/order-service-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/home/joao/Documents/Work/recipe/order-service/project/src/main/resources",
-            "/home/joao/Documents/Work/recipe/order-service/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/home/joao/Documents/Work/order-service/project/src/main/resources",
+            "/home/joao/Documents/Work/order-service/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -150,7 +150,7 @@
                 "/home/joao/.sbt/boot/scala-2.12.14/lib/scala-compiler.jar",
                 "/home/joao/.sbt/boot/scala-2.12.14/lib/scala-reflect.jar"
             ],
-            "analysis": "/home/joao/Documents/Work/recipe/order-service/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
+            "analysis": "/home/joao/Documents/Work/order-service/project/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -225,7 +225,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-14-openjdk-amd64",
                 "options": [
-                    "-Duser.dir=/home/joao/Documents/Work/recipe/order-service/project"
+                    "-Duser.dir=/home/joao/Documents/Work/order-service/project"
                 ]
             },
             "mainClass": [

@@ -2,20 +2,20 @@
     "version": "1.4.0",
     "project": {
         "name": "root-test",
-        "directory": "/home/joao/Documents/Work/recipe/order-service",
-        "workspaceDir": "/home/joao/Documents/Work/recipe/order-service",
+        "directory": "/home/joao/Documents/Work/order-service",
+        "workspaceDir": "/home/joao/Documents/Work/order-service",
         "sources": [
-            "/home/joao/Documents/Work/recipe/order-service/src/test/scala",
-            "/home/joao/Documents/Work/recipe/order-service/src/test/scala-2.13",
-            "/home/joao/Documents/Work/recipe/order-service/src/test/scala-2",
-            "/home/joao/Documents/Work/recipe/order-service/src/test/java",
-            "/home/joao/Documents/Work/recipe/order-service/target/scala-2.13/src_managed/test"
+            "/home/joao/Documents/Work/order-service/src/test/scala",
+            "/home/joao/Documents/Work/order-service/src/test/scala-2.13",
+            "/home/joao/Documents/Work/order-service/src/test/scala-2",
+            "/home/joao/Documents/Work/order-service/src/test/java",
+            "/home/joao/Documents/Work/order-service/target/scala-2.13/src_managed/test"
         ],
         "dependencies": [
             "root"
         ],
         "classpath": [
-            "/home/joao/Documents/Work/recipe/order-service/.bloop/root/scala-2.13/classes",
+            "/home/joao/Documents/Work/order-service/.bloop/root/scala-2.13/classes",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.6/scala-library-2.13.6.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-blaze-server_2.13/0.21.31/http4s-blaze-server_2.13-0.21.31.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-blaze-client_2.13/0.21.31/http4s-blaze-client_2.13-0.21.31.jar",
@@ -58,11 +58,11 @@
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.13/0.5.4/simulacrum-scalafix-annotations_2.13-0.5.4.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/chrisdavenport/unique_2.13/2.0.0/unique_2.13-2.0.0.jar"
         ],
-        "out": "/home/joao/Documents/Work/recipe/order-service/.bloop/root",
-        "classesDir": "/home/joao/Documents/Work/recipe/order-service/.bloop/root/scala-2.13/test-classes",
+        "out": "/home/joao/Documents/Work/order-service/.bloop/root",
+        "classesDir": "/home/joao/Documents/Work/order-service/.bloop/root/scala-2.13/test-classes",
         "resources": [
-            "/home/joao/Documents/Work/recipe/order-service/src/test/resources",
-            "/home/joao/Documents/Work/recipe/order-service/target/scala-2.13/resource_managed/test"
+            "/home/joao/Documents/Work/order-service/src/test/resources",
+            "/home/joao/Documents/Work/order-service/target/scala-2.13/resource_managed/test"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -117,7 +117,7 @@
                 "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/jline/jline/3.19.0/jline-3.19.0.jar",
                 "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/net/java/dev/jna/jna/5.3.1/jna-5.3.1.jar"
             ],
-            "analysis": "/home/joao/Documents/Work/recipe/order-service/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
+            "analysis": "/home/joao/Documents/Work/order-service/target/streams/test/bloopAnalysisOut/_global/streams/inc_compile_2.13.zip",
             "setup": {
                 "order": "mixed",
                 "addLibraryToBootClasspath": true,
@@ -186,7 +186,7 @@
             "config": {
                 "home": "/usr/lib/jvm/java-14-openjdk-amd64",
                 "options": [
-                    "-Duser.dir=/home/joao/Documents/Work/recipe/order-service"
+                    "-Duser.dir=/home/joao/Documents/Work/order-service"
                 ]
             },
             "mainClass": [
