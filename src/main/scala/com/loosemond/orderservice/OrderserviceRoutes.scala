@@ -4,9 +4,10 @@ import cats.effect.Sync
 import cats.implicits._
 import org.http4s.HttpRoutes
 import org.http4s.dsl.Http4sDsl
-import com.loosemond.orderservice.domain.Products
-import com.loosemond.orderservice.domain.Products.Product
-import com.loosemond.orderservice.domain.Products.ProductMessage
+import com.loosemond.orderservice.domain._
+import com.loosemond.orderservice.domain.Products._
+import com.loosemond.orderservice.domain.Items._
+// import shapeless.ops.product
 
 object OrderserviceRoutes {
 
@@ -37,6 +38,42 @@ object OrderserviceRoutes {
           }
         } yield resp
       case GET -> Root / "products" => Ok(products.getAll())
+
+    }
+
+  }
+
+  def itemRoutes[F[_]: Sync](items: Items[F]): HttpRoutes[F] = {
+    val dsl = new Http4sDsl[F] {}
+
+    import dsl._
+    HttpRoutes.of[F] {
+      case request @ POST -> Root / "items" =>
+        for {
+          item <- request.as[Item]
+
+          createdItemE <- items.create(item)
+          // productById <- product2.findById(item.id.)
+
+          resp <- createdItemE match {
+            case Left(message)      => BadRequest(message)
+            case Right(createdItem) => Created(createdItem)
+          }
+        } yield resp
+      case GET -> Root / "items" / id =>
+        for {
+          resolvedItemO <- items.findById(id)
+          resp <- resolvedItemO match {
+            case Right(resolvedItem) => Ok(resolvedItem)
+            case Left(itemMessage @ ItemMessage(message))
+                if message.startsWith(
+                  "item did not exist with following identifier"
+                ) =>
+              NotFound(itemMessage)
+            case Left(itemMessage) => BadRequest(itemMessage)
+          }
+        } yield resp
+      case GET -> Root / "items" => Ok(items.getAll())
 
     }
 

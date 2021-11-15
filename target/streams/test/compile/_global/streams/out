@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/test/scala/com/loosemond/orderservice/ProductSpec.scala:54:34: value contains is not a member of Double[0m
+[0m[[0m[31merror[0m] [0m[0m      createdProduct.map(_.price.contains("10-11-2021")),[0m
+[0m[[0m[31merror[0m] [0m[0m                                 ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

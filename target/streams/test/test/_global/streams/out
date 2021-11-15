@@ -1,5 +1,7 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.loosemond.orderservice.OrderSpecSpec, CustomFingerprint{suite='munit.Suite'}, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.loosemond.orderservice.ProductSpecSpec, CustomFingerprint{suite='munit.Suite'}, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(com.loosemond.orderservice.ItemSpecSpec, CustomFingerprint{suite='munit.Suite'}, false, [SuiteSelector])[0m
 [0m[[0m[0mdebug[0m] [0m[0mSummary for munit not available.[0m
-[0m[[0m[0minfo[0m] [0m[0mPassed: Total 2, Failed 0, Errors 0, Passed 2[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 3, Failed 0, Errors 0, Passed 3[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	com.loosemond.orderservice.OrderSpecSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.loosemond.orderservice.ProductSpecSpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com.loosemond.orderservice.ItemSpecSpec[0m

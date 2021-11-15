@@ -1,4 +1,25 @@
-[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/domain/Products.scala:119:1: Missing closing brace `}` assumed here[0m
-[0m[[0m[31merror[0m] [0m[0m}[0m
-[0m[[0m[31merror[0m] [0m[0m^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/OrderserviceRoutes.scala:10:42: object Items is not a member of package com.loosemond.orderservice.domain[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.loosemond.orderservice.domain.Items.Item[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/OrderserviceRoutes.scala:46:37: not found: type Items[0m
+[0m[[0m[31merror[0m] [0m[0m  def itemRoutes[F[_]: Sync](items: Items[F]): HttpRoutes[F] = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                    ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/OrderserviceRoutes.scala:52:30: not found: type Item[0m
+[0m[[0m[31merror[0m] [0m[0m          item <- request.as[Item][0m
+[0m[[0m[31merror[0m] [0m[0m                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/OrderserviceRoutes.scala:10:48: Unused import[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.loosemond.orderservice.domain.Items.Item[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/OrderserviceRoutes.scala:52:11: parameter value item in anonymous function is never used[0m
+[0m[[0m[31merror[0m] [0m[0m          item <- request.as[Item][0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/OrderserviceServer.scala:10:8: object Items is not a member of package com.loosemond.orderservice.domain[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.loosemond.orderservice.domain.Items[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/OrderserviceServer.scala:22:42: not found: value Items[0m
+[0m[[0m[31merror[0m] [0m[0m        OrderserviceRoutes.itemRoutes[F](Items.impl[F]())[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/OrderserviceServer.scala:10:42: Unused import[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.loosemond.orderservice.domain.Items[0m
+[0m[[0m[31merror[0m] [0m[0m                                         ^[0m
+[0m[[0m[31merror[0m] [0m[0m8 errors found[0m
