@@ -7,7 +7,7 @@ import org.http4s.server.blaze.BlazeServerBuilder
 import org.http4s.server.middleware.Logger
 import scala.concurrent.ExecutionContext.global
 // import com.loosemond.orderservice.domain.Products
-import com.loosemond.orderservice.domain.Items
+// import com.loosemond.orderservice.domain.Items
 import cats.syntax.all._
 // import com.loosemond.orderservice.database.Migrations
 import com.loosemond.orderservice.database._
@@ -21,7 +21,7 @@ object OrderserviceServer {
     val httpApp = (
       OrderserviceRoutes
         .productRoutes[F](new ProductsRepository[F]()) <+>
-        OrderserviceRoutes.itemRoutes[F](Items.impl[F]())
+        OrderserviceRoutes.itemRoutes[F](new ItemsRepository[F]())
     ).orNotFound
 
     val finalHttpApp = Logger.httpApp(true, true)(httpApp)

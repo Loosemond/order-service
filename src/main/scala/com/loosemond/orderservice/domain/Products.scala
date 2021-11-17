@@ -83,17 +83,16 @@ object Products {
   ) {
     def getCreationDate(): Date =
       DateFormat.getDateInstance().parse(creationDate)
-
   }
 
-  case class ProductDb(
-      id: Option[UUID] = None,
-      name: String,
-      category: String,
-      weight: Double,
-      price: Double,
-      creationDate: Date
-  ) {}
+  // case class ProductDb(
+  //     id: Option[UUID] = None,
+  //     name: String,
+  //     category: String,
+  //     weight: Double,
+  //     price: Double,
+  //     creationDate: Date
+  // ) {}
 
   case class ProductMessage(message: String)
 

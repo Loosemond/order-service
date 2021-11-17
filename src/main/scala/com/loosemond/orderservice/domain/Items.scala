@@ -14,8 +14,8 @@ import org.http4s.{EntityDecoder, EntityEncoder}
 // import com.loosemond.orderservice.domain.Products
 import com.loosemond.orderservice.domain.Products.Product
 
-import scala.collection.mutable.ListBuffer
-import com.loosemond.orderservice.database.ProductsRepository
+// import scala.collection.mutable.ListBuffer
+// import com.loosemond.orderservice.database.ProductsRepository
 
 trait Items[F[_]] {
   def create(item: ItemDTO): F[Either[ItemMessage, Item]]
@@ -24,75 +24,75 @@ trait Items[F[_]] {
 }
 
 object Items {
-  def impl[F[_]: Sync](): Items[F] = new Items[F] {
+  // def impl[F[_]: Sync](): Items[F] = new Items[F] {
 
-    val items = new ListBuffer[ItemDTO]()
+  //   val items = new ListBuffer[ItemDTO]()
 
-    override def create(
-        item: ItemDTO
-    ): F[Either[ItemMessage, Item]] = {
+  //   override def create(
+  //       item: ItemDTO
+  //   ): F[Either[ItemMessage, Item]] = {
 
-      val productService: Products[F] = new ProductsRepository[F]()
-      // Must receive a DTO that contains product:string
-      val ppp: Product = productService.findById(item.product) match {
-        case (Right(x: Product)) => x
-        // case (Left(_))           => None
-      }
-      // Wont find the product because the storage is attached to the "domain"
-      val createdItem = item.copy(id = Option(UUID.randomUUID()))
+  //     val productService: Products[F] = new ProductsRepository[F]()
+  //     // Must receive a DTO that contains product:string
+  //     val ppp: Product = productService.findById(item.product) match {
+  //       case (Right(x: Product)) => x
+  //       // case (Left(_))           => None
+  //     }
+  //     // Wont find the product because the storage is attached to the "domain"
+  //     val createdItem = item.copy(id = Option(UUID.randomUUID()))
 
-      // add one element at a time to the ListBuffer
-      items += createdItem
-      val completeItem = new Item(
-        id = createdItem.id,
-        product = ppp,
-        shippingFee = createdItem.shippingFee,
-        price = createdItem.price
-      )
-      Sync[F].pure(Right(completeItem))
-    }
-    override def getAll(): F[List[Item]] = {
-      // TODO Implement mapper
-      ???
-      // Sync[F].pure(items.toList)
+  //     // add one element at a time to the ListBuffer
+  //     items += createdItem
+  //     val completeItem = new Item(
+  //       id = createdItem.id,
+  //       product = ppp,
+  //       shippingFee = createdItem.shippingFee,
+  //       price = createdItem.price
+  //     )
+  //     Sync[F].pure(Right(completeItem))
+  //   }
+  //   override def getAll(): F[List[Item]] = {
+  //     // TODO Implement mapper
+  //     ???
+  //     // Sync[F].pure(items.toList)
 
-    }
+  //   }
 
-    // private def resolveId(id: String): Option[UUID] = {
-    //   try {
-    //     Option(UUID.fromString(id))
-    //   } catch {
-    //     case (_: IllegalArgumentException) => None
-    //   }
-    // }
+  //   // private def resolveId(id: String): Option[UUID] = {
+  //   //   try {
+  //   //     Option(UUID.fromString(id))
+  //   //   } catch {
+  //   //     case (_: IllegalArgumentException) => None
+  //   //   }
+  //   // }
 
-    override def findById(id: String): F[Either[ItemMessage, Item]] = {
-      ???
-      // resolveId(id) match {
-      //   case Some(resolvedId) =>
-      //     Sync[F].pure {
-      //       items.find(_.id.contains(resolvedId)) match {
-      //         case Some(item) => Right(item)
-      //         case None =>
-      //           Left(
-      //             ItemMessage(
-      //               s"item did not exist with following identifier: $id"
-      //             )
-      //           )
-      //       }
-      //     }
-      //   case None =>
-      //     Sync[F].pure(
-      //       Left(ItemMessage(s"provided identifier was invalid: $id"))
-      //     )
-      // }
+  //   override def findById(id: String): F[Either[ItemMessage, Item]] = {
+  //     ???
+  //     // resolveId(id) match {
+  //     //   case Some(resolvedId) =>
+  //     //     Sync[F].pure {
+  //     //       items.find(_.id.contains(resolvedId)) match {
+  //     //         case Some(item) => Right(item)
+  //     //         case None =>
+  //     //           Left(
+  //     //             ItemMessage(
+  //     //               s"item did not exist with following identifier: $id"
+  //     //             )
+  //     //           )
+  //     //       }
+  //     //     }
+  //     //   case None =>
+  //     //     Sync[F].pure(
+  //     //       Left(ItemMessage(s"provided identifier was invalid: $id"))
+  //     //     )
+  //     // }
 
-    }
-    // def itemToDomain(itemDto: ItemDTO): F[Item] = new Item (
-    //   id = itemDto.id,
-    //   product =
-    // )
-  }
+  //   }
+  //   // def itemToDomain(itemDto: ItemDTO): F[Item] = new Item (
+  //   //   id = itemDto.id,
+  //   //   product =
+  //   // )
+  // }
 // finish
   case class Item(
       id: Option[UUID] = None,
@@ -107,7 +107,7 @@ object Items {
 
   case class ItemDTO(
       id: Option[UUID] = None,
-      product: String,
+      product: UUID,
       shippingFee: Double,
       price: Double
   ) {}
@@ -132,7 +132,7 @@ object Items {
   object Item {
     implicit val itemDecoder: Decoder[Item] = deriveDecoder[Item]
 
-    // implicit val itemDecoder2: Decoder[Product] = deriveDecoder[Product]
+    implicit val itemDecoder2: Decoder[Product] = deriveDecoder[Product]
 
     implicit def itemEntityDecoder[F[_]: Sync]: EntityDecoder[F, Item] =
       jsonOf

@@ -24,3 +24,8 @@ CREATE EXTENSION "uuid-ossp";
 >>>Quit and Exit the Terminal
 \q
 exit
+
+>TODO
+>>ADD random UUID to unique vars - DONE
+>>FINISH product implementation - DONE 
+>>FINISH item implementation 

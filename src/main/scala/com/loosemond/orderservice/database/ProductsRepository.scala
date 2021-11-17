@@ -62,31 +62,35 @@ class ProductsRepository[F[_]: Sync] extends Products[F] {
   }
 
   override def findById(id: String): F[Either[ProductMessage, Product]] = {
-    ???
-    //   fromUUID(id)
-    //     .map { id =>
-    //       Sync[F].delay {
-    //         ctx.run(products.filter(_.id.contains(lift(id)))) match {
-    //           case Seq(product) => Right(product)
-    //           case Seq() =>
-    //             Left(
-    //               ProductMessage(
-    //                 s"product did not exist with following identifier: $id"
-    //               )
-    //             )
-    //           case _ => Left(ProductMessage(""))
-    //         }
-    //       }
-    //     }
-    //     .getOrElse(
-    //       Sync[F]
-    //         .pure(Left(ProductMessage(s"provided identifier was invalid: $id")))
-    //     )
+    // ???
+    fromUUID(id)
+      .map { id =>
+        Sync[F].delay {
+          ctx.run(products.filter(_.id.contains(lift(id)))) match {
+            case Seq(product) => Right(product)
+            case Seq() =>
+              Left(
+                ProductMessage(
+                  s"product did not exist with following identifier: $id"
+                )
+              )
+            case _ => Left(ProductMessage(""))
+          }
+        }
+      }
+      .getOrElse(
+        Sync[F]
+          .pure(Left(ProductMessage(s"provided identifier was invalid: $id")))
+      )
 
   }
 
   def getAll(): F[List[Product]] = {
-    ???
+    // ???
+    Sync[F].delay {
+      ctx.run(products)
+
+    }
   }
 
 }

@@ -18,10 +18,11 @@ import com.loosemond.orderservice.database.ProductsRepository
 class ProductSpecSpec extends CatsEffectSuite {
 
   test("Creating products") {
+    val uuid = UUID.randomUUID()
     val createdProductResponse: Response[IO] =
       createProduct(
         Product(
-          name = "shoe",
+          name = s"shoe - ${uuid}",
           category = "clothes",
           weight = 0.300,
           price = 49.99,
@@ -35,7 +36,7 @@ class ProductSpecSpec extends CatsEffectSuite {
     )
     assertIOBoolean(createdProduct.map(_.id.isDefined), "id was not defined")
     assertIOBoolean(
-      createdProduct.map(_.name.contains("shoe")),
+      createdProduct.map(_.name.contains(s"shoe - ${uuid}")),
       "Name did not match"
     )
     assertIOBoolean(
@@ -60,9 +61,11 @@ class ProductSpecSpec extends CatsEffectSuite {
 
   test("Retrieving products") {
     // creating the obj to test
+    val uuid = UUID.randomUUID()
+
     val createdProduct: Product = createProduct(
       Product(
-        name = "shoe",
+        name = s"shoe - ${uuid}",
         category = "clothes",
         weight = 0.300,
         price = 49.99,
@@ -81,7 +84,7 @@ class ProductSpecSpec extends CatsEffectSuite {
       resolvedProduct.map(_.id.contains(productId)),
       "id did not match"
     )
-    assertIO(resolvedProduct.map(_.name), "shoe")
+    assertIO(resolvedProduct.map(_.name), s"shoe - ${uuid}")
     assertIO(resolvedProduct.map(_.category), "clothes")
     assertIO(resolvedProduct.map(_.weight), 0.3)
     assertIO(resolvedProduct.map(_.price), 49.99)

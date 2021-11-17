@@ -10,8 +10,12 @@ import org.http4s
 import io.circe.syntax._
 import org.http4s.circe._
 import com.loosemond.orderservice.domain.Items.Item
+// import com.loosemond.orderservice.domain.Items
+// import com.loosemond.orderservice.domain.Products.Product
+import com.loosemond.orderservice.database.ItemsRepository
+import com.loosemond.orderservice.database.Migrations
+import java.util.UUID
 import com.loosemond.orderservice.domain.Items
-import com.loosemond.orderservice.domain.Products.Product
 
 // import com.loosemond.orderservice.domain.Items.ItemMessage
 
@@ -20,14 +24,9 @@ class ItemSpecSpec extends CatsEffectSuite {
   test("Creating items") {
     val createdItemResponse: Response[IO] =
       createItem(
-        Item(
-          product = Product(
-            name = "shoe",
-            category = "clothes",
-            weight = 0.300,
-            price = 49.99,
-            creationDate = "10-11-2021"
-          ),
+        Items.ItemDTO(
+          product = UUID
+            .fromString("d91e210f-daef-4ccf-9609-6d50fe548ab0"),
           shippingFee = 2.3,
           price = 20.2
         )
@@ -53,11 +52,13 @@ class ItemSpecSpec extends CatsEffectSuite {
   }
 
   val server: http4s.HttpApp[IO] = {
-    OrderserviceRoutes.itemRoutes[IO](Items.impl[IO]()).orNotFound
+    Migrations.migrate[IO]().compile.drain.unsafeRunSync()
+
+    OrderserviceRoutes.itemRoutes[IO](new ItemsRepository[IO]()).orNotFound
 
   }
 
-  private[this] def createItem(product: Item): Response[IO] = {
+  private[this] def createItem(product: Items.ItemDTO): Response[IO] = {
     val postItem: Request[IO] =
       Request[IO](Method.POST, uri"/items")
         .withEntity(product.asJson)
