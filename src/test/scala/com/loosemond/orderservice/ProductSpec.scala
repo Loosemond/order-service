@@ -10,7 +10,8 @@ import org.http4s
 import io.circe.syntax._
 import org.http4s.circe._
 import com.loosemond.orderservice.domain.Products.Product
-import com.loosemond.orderservice.domain.Products
+import com.loosemond.orderservice.database.Migrations
+import com.loosemond.orderservice.database.ProductsRepository
 // import cats.instances.double
 // import com.loosemond.orderservice.domain.Products.ProductMessage
 
@@ -89,7 +90,10 @@ class ProductSpecSpec extends CatsEffectSuite {
   }
 
   val server: http4s.HttpApp[IO] = {
-    OrderserviceRoutes.productRoutes[IO](Products.impl[IO]()).orNotFound
+    Migrations.migrate[IO]().compile.drain.unsafeRunSync()
+    OrderserviceRoutes
+      .productRoutes[IO](new ProductsRepository[IO]())
+      .orNotFound
   }
 
   private[this] def createProduct(product: Product): Response[IO] = {

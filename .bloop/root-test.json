@@ -26,6 +26,9 @@
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/munit-cats-effect-2_2.13/1.0.5/munit-cats-effect-2_2.13-1.0.5.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.2.5/logback-classic-1.2.5.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scalameta/svm-subs_2.13/20.2.0/svm-subs_2.13-20.2.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/flywaydb/flyway-core/8.0.4/flyway-core-8.0.4.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.2.8/postgresql-42.2.8.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-jdbc_2.13/3.10.0/quill-jdbc_2.13-3.10.0.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-blaze-core_2.13/0.21.31/http4s-blaze-core_2.13-0.21.31.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-server_2.13/0.21.31/http4s-server_2.13-0.21.31.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/http4s/http4s-client_2.13/0.21.31/http4s-client_2.13-0.21.31.jar",
@@ -39,6 +42,10 @@
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-effect_2.13/2.5.1/cats-effect_2.13-2.5.1.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/ch/qos/logback/logback-core/1.2.5/logback-core-1.2.5.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.31/slf4j-api-1.7.31.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-sql_2.13/3.10.0/quill-sql_2.13-3.10.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.2.0/scala-collection-compat_2.13-2.2.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_2.13/0.5.5/pprint_2.13-0.5.5.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/http4s/blaze-http_2.13/0.14.18/blaze-http_2.13-0.14.18.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-core_2.13/2.6.1/cats-core_2.13-2.6.1.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/co/fs2/fs2-core_2.13/2.5.9/fs2-core_2.13-2.5.9.jar",
@@ -52,11 +59,28 @@
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/circe/circe-numbers_2.13/0.13.0/circe-numbers_2.13-0.13.0.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-sql-portable_2.13/3.10.0/quill-sql-portable_2.13-3.10.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-core_2.13/3.10.0/quill-core_2.13-3.10.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/vertical-blank/scala-sql-formatter_2.13/1.0.1/scala-sql-formatter_2.13-1.0.1.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.2.7/fansi_2.13-0.2.7.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.1.7/sourcecode_2.13-0.1.7.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/http4s/blaze-core_2.13/0.14.18/blaze-core_2.13-0.14.18.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/hpack/1.0.2/hpack-1.0.2.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/cats-kernel_2.13/2.6.1/cats-kernel_2.13-2.6.1.jar",
             "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/typelevel/simulacrum-scalafix-annotations_2.13/0.5.4/simulacrum-scalafix-annotations_2.13-0.5.4.jar",
-            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/chrisdavenport/unique_2.13/2.0.0/unique_2.13-2.0.0.jar"
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/chrisdavenport/unique_2.13/2.0.0/unique_2.13-2.0.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-core-portable_2.13/3.10.0/quill-core-portable_2.13-3.10.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.9.2/scala-logging_2.13-3.9.2.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.6/scala-reflect-2.13.6.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/vertical-blank/sql-formatter/1.0/sql-formatter-1.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill_2.13/0.9.5/chill_2.13-0.9.5.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/suzaku/boopickle_2.13/1.3.1/boopickle_2.13-1.3.1.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill-java/0.9.5/chill-java-0.9.5.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/4.0.2/kryo-shaded-4.0.2.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/xbean/xbean-asm7-shaded/4.15/xbean-asm7-shaded-4.15.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar",
+            "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar"
         ],
         "out": "/home/joao/Documents/Work/order-service/.bloop/root",
         "classesDir": "/home/joao/Documents/Work/order-service/.bloop/root/scala-2.13/test-classes",
@@ -332,6 +356,57 @@
                     ]
                 },
                 {
+                    "organization": "org.flywaydb",
+                    "name": "flyway-core",
+                    "version": "8.0.4",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "flyway-core",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/flywaydb/flyway-core/8.0.4/flyway-core-8.0.4.jar"
+                        },
+                        {
+                            "name": "flyway-core",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/flywaydb/flyway-core/8.0.4/flyway-core-8.0.4-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.postgresql",
+                    "name": "postgresql",
+                    "version": "42.2.8",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "postgresql",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.2.8/postgresql-42.2.8.jar"
+                        },
+                        {
+                            "name": "postgresql",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/postgresql/postgresql/42.2.8/postgresql-42.2.8-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.getquill",
+                    "name": "quill-jdbc_2.13",
+                    "version": "3.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "quill-jdbc_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-jdbc_2.13/3.10.0/quill-jdbc_2.13-3.10.0.jar"
+                        },
+                        {
+                            "name": "quill-jdbc_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-jdbc_2.13/3.10.0/quill-jdbc_2.13-3.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "org.http4s",
                     "name": "http4s-blaze-core_2.13",
                     "version": "0.21.31",
@@ -498,6 +573,74 @@
                             "name": "slf4j-api",
                             "classifier": "sources",
                             "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.31/slf4j-api-1.7.31-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.getquill",
+                    "name": "quill-sql_2.13",
+                    "version": "3.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "quill-sql_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-sql_2.13/3.10.0/quill-sql_2.13-3.10.0.jar"
+                        },
+                        {
+                            "name": "quill-sql_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-sql_2.13/3.10.0/quill-sql_2.13-3.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang.modules",
+                    "name": "scala-collection-compat_2.13",
+                    "version": "2.2.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.2.0/scala-collection-compat_2.13-2.2.0.jar"
+                        },
+                        {
+                            "name": "scala-collection-compat_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-collection-compat_2.13/2.2.0/scala-collection-compat_2.13-2.2.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "pprint_2.13",
+                    "version": "0.5.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "pprint_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_2.13/0.5.5/pprint_2.13-0.5.5.jar"
+                        },
+                        {
+                            "name": "pprint_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/pprint_2.13/0.5.5/pprint_2.13-0.5.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.zaxxer",
+                    "name": "HikariCP",
+                    "version": "3.4.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "HikariCP",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar"
+                        },
+                        {
+                            "name": "HikariCP",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5-sources.jar"
                         }
                     ]
                 },
@@ -706,6 +849,91 @@
                     ]
                 },
                 {
+                    "organization": "io.getquill",
+                    "name": "quill-sql-portable_2.13",
+                    "version": "3.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "quill-sql-portable_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-sql-portable_2.13/3.10.0/quill-sql-portable_2.13-3.10.0.jar"
+                        },
+                        {
+                            "name": "quill-sql-portable_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-sql-portable_2.13/3.10.0/quill-sql-portable_2.13-3.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.getquill",
+                    "name": "quill-core_2.13",
+                    "version": "3.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "quill-core_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-core_2.13/3.10.0/quill-core_2.13-3.10.0.jar"
+                        },
+                        {
+                            "name": "quill-core_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-core_2.13/3.10.0/quill-core_2.13-3.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.vertical-blank",
+                    "name": "scala-sql-formatter_2.13",
+                    "version": "1.0.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-sql-formatter_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/vertical-blank/scala-sql-formatter_2.13/1.0.1/scala-sql-formatter_2.13-1.0.1.jar"
+                        },
+                        {
+                            "name": "scala-sql-formatter_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/vertical-blank/scala-sql-formatter_2.13/1.0.1/scala-sql-formatter_2.13-1.0.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "fansi_2.13",
+                    "version": "0.2.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "fansi_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.2.7/fansi_2.13-0.2.7.jar"
+                        },
+                        {
+                            "name": "fansi_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/fansi_2.13/0.2.7/fansi_2.13-0.2.7-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.lihaoyi",
+                    "name": "sourcecode_2.13",
+                    "version": "0.1.7",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sourcecode_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.1.7/sourcecode_2.13-0.1.7.jar"
+                        },
+                        {
+                            "name": "sourcecode_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/lihaoyi/sourcecode_2.13/0.1.7/sourcecode_2.13-0.1.7-sources.jar"
+                        }
+                    ]
+                },
+                {
                     "organization": "org.http4s",
                     "name": "blaze-core_2.13",
                     "version": "0.14.18",
@@ -787,6 +1015,210 @@
                             "name": "unique_2.13",
                             "classifier": "sources",
                             "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/chrisdavenport/unique_2.13/2.0.0/unique_2.13-2.0.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.getquill",
+                    "name": "quill-core-portable_2.13",
+                    "version": "3.10.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "quill-core-portable_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-core-portable_2.13/3.10.0/quill-core-portable_2.13-3.10.0.jar"
+                        },
+                        {
+                            "name": "quill-core-portable_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/getquill/quill-core-portable_2.13/3.10.0/quill-core-portable_2.13-3.10.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe",
+                    "name": "config",
+                    "version": "1.4.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "config",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1.jar"
+                        },
+                        {
+                            "name": "config",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.1/config-1.4.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.typesafe.scala-logging",
+                    "name": "scala-logging_2.13",
+                    "version": "3.9.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-logging_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.9.2/scala-logging_2.13-3.9.2.jar"
+                        },
+                        {
+                            "name": "scala-logging_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.9.2/scala-logging_2.13-3.9.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.scala-lang",
+                    "name": "scala-reflect",
+                    "version": "2.13.6",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "scala-reflect",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.6/scala-reflect-2.13.6.jar"
+                        },
+                        {
+                            "name": "scala-reflect",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.13.6/scala-reflect-2.13.6-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.github.vertical-blank",
+                    "name": "sql-formatter",
+                    "version": "1.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "sql-formatter",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/vertical-blank/sql-formatter/1.0/sql-formatter-1.0.jar"
+                        },
+                        {
+                            "name": "sql-formatter",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/github/vertical-blank/sql-formatter/1.0/sql-formatter-1.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "chill_2.13",
+                    "version": "0.9.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "chill_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill_2.13/0.9.5/chill_2.13-0.9.5.jar"
+                        },
+                        {
+                            "name": "chill_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill_2.13/0.9.5/chill_2.13-0.9.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "io.suzaku",
+                    "name": "boopickle_2.13",
+                    "version": "1.3.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "boopickle_2.13",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/suzaku/boopickle_2.13/1.3.1/boopickle_2.13-1.3.1.jar"
+                        },
+                        {
+                            "name": "boopickle_2.13",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/io/suzaku/boopickle_2.13/1.3.1/boopickle_2.13-1.3.1-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.twitter",
+                    "name": "chill-java",
+                    "version": "0.9.5",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "chill-java",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill-java/0.9.5/chill-java-0.9.5.jar"
+                        },
+                        {
+                            "name": "chill-java",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/twitter/chill-java/0.9.5/chill-java-0.9.5-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.esotericsoftware",
+                    "name": "kryo-shaded",
+                    "version": "4.0.2",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "kryo-shaded",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/4.0.2/kryo-shaded-4.0.2.jar"
+                        },
+                        {
+                            "name": "kryo-shaded",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/kryo-shaded/4.0.2/kryo-shaded-4.0.2-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.apache.xbean",
+                    "name": "xbean-asm7-shaded",
+                    "version": "4.15",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "xbean-asm7-shaded",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/xbean/xbean-asm7-shaded/4.15/xbean-asm7-shaded-4.15.jar"
+                        },
+                        {
+                            "name": "xbean-asm7-shaded",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/apache/xbean/xbean-asm7-shaded/4.15/xbean-asm7-shaded-4.15-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "com.esotericsoftware",
+                    "name": "minlog",
+                    "version": "1.3.0",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "minlog",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar"
+                        },
+                        {
+                            "name": "minlog",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0-sources.jar"
+                        }
+                    ]
+                },
+                {
+                    "organization": "org.objenesis",
+                    "name": "objenesis",
+                    "version": "2.5.1",
+                    "configurations": "default",
+                    "artifacts": [
+                        {
+                            "name": "objenesis",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1.jar"
+                        },
+                        {
+                            "name": "objenesis",
+                            "classifier": "sources",
+                            "path": "/home/joao/.cache/coursier/v1/https/repo1.maven.org/maven2/org/objenesis/objenesis/2.5.1/objenesis-2.5.1-sources.jar"
                         }
                     ]
                 },

@@ -1,6 +1,4 @@
 #Successful Tests
-#Mon Nov 15 22:50:48 WET 2021
+#Wed Nov 17 00:38:10 WET 2021
 com.loosemond.orderservice.HelloWorldSpec=1636744448547
 com.loosemond.orderservice.OrderSpecSpec=1636974732687
-com.loosemond.orderservice.ItemSpecSpec=1637016648612
-com.loosemond.orderservice.ProductSpecSpec=1637016648612

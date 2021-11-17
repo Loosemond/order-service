@@ -1,0 +1,26 @@
+
+"jbc:postgresql://localhost:5432/orders",
+"postgres",
+"password"
+
+
+docker run -p 5432:5432 --name orders-datastore -e POSTGRES_PASSWORD=password -h database postgres
+
+docker run -p 5432:5432 --name orders-datastore -e POSTGRES_HOST_AUTH_METHOD=trust postgres
+
+
+>>>Create a terminal session against the container
+docker exec -it orders-datastore psql -U postgres
+
+>>>Create the database
+create database orders;
+
+>>>Connect to the database
+\c orders;
+
+>>>Provision the UUID-OSSP Extensions
+CREATE EXTENSION "uuid-ossp";
+
+>>>Quit and Exit the Terminal
+\q
+exit

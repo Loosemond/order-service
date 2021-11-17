@@ -1,13 +1,97 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<testsuite hostname="UClevo" name="com.loosemond.orderservice.ProductSpecSpec" tests="2" errors="0" failures="0" skipped="0" time="0.772" timestamp="2021-11-15T22:50:47">
+<testsuite hostname="UClevo" name="com.loosemond.orderservice.ProductSpecSpec" tests="2" errors="0" failures="2" skipped="0" time="1.539" timestamp="2021-11-17T00:38:07">
           <properties>
       <property name="java.specification.version" value="14"/><property name="sun.jnu.encoding" value="UTF-8"/><property name="sun.arch.data.model" value="64"/><property name="java.vendor.url" value="Unknown"/><property name="user.country.format" value="PT"/><property name="sun.boot.library.path" value="/usr/lib/jvm/java-14-openjdk-amd64/lib"/><property name="sun.java.command" value="/home/joao/.cache/sbt/boot/sbt-launch/1.5.5/sbt-launch-1.5.5.jar"/><property name="jdk.debug" value="release"/><property name="java.specification.vendor" value="Oracle Corporation"/><property name="java.version.date" value="2020-07-14"/><property name="java.home" value="/usr/lib/jvm/java-14-openjdk-amd64"/><property name="file.separator" value="/"/><property name="java.vm.compressedOopsMode" value="32-bit"/><property name="line.separator" value="
-"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="14.0.2+12-Ubuntu-120.04"/><property name="user.name" value="joao"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/home/joao/.cache/JNA/temp/jna14154788445952621654.tmp"/><property name="jna.loaded" value="true"/><property name="java.io.tmpdir" value="/tmp"/><property name="java.version" value="14.0.2"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/><property name="java.vendor" value="Private Build"/><property name="scala.ext.dirs" value="/home/joao/.sbt/1.0/java9-rt-ext-private_build_14_0_2"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="java.class.path" value="/home/joao/.cache/sbt/boot/sbt-launch/1.5.5/sbt-launch-1.5.5.jar"/><property name="java.vm.vendor" value="Private Build"/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="Europe/Lisbon"/><property name="java.vm.specification.version" value="14"/><property name="os.name" value="Linux"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="US"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/home/joao"/><property name="user.language" value="en"/><property name="swoval.tmpdir" value="/home/joao/.sbt/1.0"/><property name="jline.esc.timeout" value="0"/><property name="path.separator" value=":"/><property name="os.version" value="5.11.0-40-generic"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="jna.platform.library.path" value="/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/usr/lib64:/lib64:/usr/lib:/lib:/lib/i386-linux-gnu:/lib/i386-linux-gnu/i686/sse2:/lib/i386-linux-gnu/sse2:/usr/lib/x86_64-linux-gnu/libfakeroot"/><property name="java.vendor.url.bug" value="Unknown"/><property name="user.dir" value="/home/joao/Documents/Work/order-service"/><property name="os.arch" value="amd64"/><property name="user.language.format" value="pt"/><property name="java.vm.info" value="mixed mode, sharing"/><property name="java.vm.version" value="14.0.2+12-Ubuntu-120.04"/><property name="java.class.version" value="58.0"/>
+"/><property name="java.vm.specification.vendor" value="Oracle Corporation"/><property name="java.specification.name" value="Java Platform API Specification"/><property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/><property name="java.runtime.version" value="14.0.2+12-Ubuntu-120.04"/><property name="user.name" value="joao"/><property name="log4j.ignoreTCL" value="true"/><property name="file.encoding" value="UTF-8"/><property name="jnidispatch.path" value="/home/joao/.cache/JNA/temp/jna3172908362712100780.tmp"/><property name="jna.loaded" value="true"/><property name="java.io.tmpdir" value="/tmp"/><property name="java.version" value="14.0.2"/><property name="java.vm.specification.name" value="Java Virtual Machine Specification"/><property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/><property name="java.vendor" value="Private Build"/><property name="scala.ext.dirs" value="/home/joao/.sbt/1.0/java9-rt-ext-private_build_14_0_2"/><property name="sun.io.unicode.encoding" value="UnicodeLittle"/><property name="java.class.path" value="/home/joao/.cache/sbt/boot/sbt-launch/1.5.5/sbt-launch-1.5.5.jar"/><property name="java.vm.vendor" value="Private Build"/><property name="jline.shutdownhook" value="false"/><property name="user.timezone" value="Europe/Lisbon"/><property name="java.vm.specification.version" value="14"/><property name="os.name" value="Linux"/><property name="sun.java.launcher" value="SUN_STANDARD"/><property name="user.country" value="US"/><property name="sun.cpu.endian" value="little"/><property name="user.home" value="/home/joao"/><property name="user.language" value="en"/><property name="swoval.tmpdir" value="/home/joao/.sbt/1.0"/><property name="jline.esc.timeout" value="0"/><property name="path.separator" value=":"/><property name="os.version" value="5.11.0-40-generic"/><property name="jna.nosys" value="true"/><property name="java.runtime.name" value="OpenJDK Runtime Environment"/><property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/><property name="jna.platform.library.path" value="/usr/lib/x86_64-linux-gnu:/lib/x86_64-linux-gnu:/usr/lib64:/lib64:/usr/lib:/lib:/lib/i386-linux-gnu:/lib/i386-linux-gnu/i686/sse2:/lib/i386-linux-gnu/sse2:/usr/lib/x86_64-linux-gnu/libfakeroot"/><property name="java.vendor.url.bug" value="Unknown"/><property name="user.dir" value="/home/joao/Documents/Work/order-service"/><property name="os.arch" value="amd64"/><property name="user.language.format" value="pt"/><property name="java.vm.info" value="mixed mode, sharing"/><property name="java.vm.version" value="14.0.2+12-Ubuntu-120.04"/><property name="java.class.version" value="58.0"/>
     </properties>
-          <testcase classname="com.loosemond.orderservice.ProductSpecSpec" name="Creating products" time="0.757">
-                      
-                    </testcase><testcase classname="com.loosemond.orderservice.ProductSpecSpec" name="Retrieving products" time="0.015">
-                      
+          <testcase classname="com.loosemond.orderservice.ProductSpecSpec" name="Creating products" time="1.516">
+                      <failure message="ERROR: duplicate key value violates unique constraint &quot;products_name_key&quot;
+  Detail: Key (name)=(shoe) already exists." type="org.postgresql.util.PSQLException">org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint &quot;products_name_key&quot;
+  Detail: Key (name)=(shoe) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:149)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:124)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at io.getquill.context.jdbc.JdbcRunContext.$anonfun$executeActionReturning$1(JdbcRunContext.scala:53)
+	at io.getquill.context.jdbc.JdbcRunContext.$anonfun$withConnectionWrapped$2(JdbcRunContext.scala:29)
+	at io.getquill.context.jdbc.JdbcContext$$anon$1.wrap(JdbcContext.scala:31)
+	at io.getquill.context.jdbc.JdbcRunContext.$anonfun$withConnectionWrapped$1(JdbcRunContext.scala:29)
+	at io.getquill.context.jdbc.JdbcContext.$anonfun$withConnection$1(JdbcContext.scala:62)
+	at scala.Option.getOrElse(Option.scala:201)
+	at io.getquill.context.jdbc.JdbcContext.withConnection(JdbcContext.scala:60)
+	at io.getquill.context.jdbc.JdbcRunContext.withConnectionWrapped(JdbcRunContext.scala:29)
+	at io.getquill.context.jdbc.JdbcRunContext.withConnectionWrapped$(JdbcRunContext.scala:28)
+	at io.getquill.context.jdbc.JdbcContext.withConnectionWrapped(JdbcContext.scala:14)
+	at io.getquill.context.jdbc.JdbcRunContext.executeActionReturning(JdbcRunContext.scala:50)
+	at io.getquill.context.jdbc.JdbcRunContext.executeActionReturning$(JdbcRunContext.scala:49)
+	at io.getquill.context.jdbc.JdbcContext.executeActionReturning(JdbcContext.scala:44)
+	at com.loosemond.orderservice.database.ProductsRepository.$anonfun$create$1(ProductsRepository.scala:38)
+	at flatMap @ com.loosemond.orderservice.OrderserviceRoutes$$anonfun$productRoutes$1.$anonfun$applyOrElse$1(OrderserviceRoutes.scala:21)
+	at map @ fs2.internal.CompileScope.$anonfun$close$9(CompileScope.scala:246)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$6(CompileScope.scala:245)
+	at map @ fs2.internal.CompileScope.fs2$internal$CompileScope$$traverseError(CompileScope.scala:222)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$4(CompileScope.scala:244)
+	at map @ fs2.internal.CompileScope.fs2$internal$CompileScope$$traverseError(CompileScope.scala:222)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$2(CompileScope.scala:242)
+	at flatMap @ fs2.internal.CompileScope.close(CompileScope.scala:241)
+	at rethrow$extension @ fs2.Stream$Compiler$.$anonfun$compile$2(Stream.scala:4225)
+	at unsafeRunSync @ com.loosemond.orderservice.ItemSpecSpec.createItem(ItemSpec.scala:64)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$openAncestor$2(CompileScope.scala:261)
+	at flatMap @ fs2.internal.FreeC$.$anonfun$compile$17(Algebra.scala:545)
+	at map @ fs2.internal.CompileScope.$anonfun$close$9(CompileScope.scala:246)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$6(CompileScope.scala:245)
+	at map @ fs2.internal.CompileScope.fs2$internal$CompileScope$$traverseError(CompileScope.scala:222)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$4(CompileScope.scala:244)
+</failure>
+                    </testcase><testcase classname="com.loosemond.orderservice.ProductSpecSpec" name="Retrieving products" time="0.023">
+                      <failure message="ERROR: duplicate key value violates unique constraint &quot;products_name_key&quot;
+  Detail: Key (name)=(shoe) already exists." type="org.postgresql.util.PSQLException">org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint &quot;products_name_key&quot;
+  Detail: Key (name)=(shoe) already exists.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2497)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2233)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:310)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:446)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:370)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:149)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:124)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at io.getquill.context.jdbc.JdbcRunContext.$anonfun$executeActionReturning$1(JdbcRunContext.scala:53)
+	at io.getquill.context.jdbc.JdbcRunContext.$anonfun$withConnectionWrapped$2(JdbcRunContext.scala:29)
+	at io.getquill.context.jdbc.JdbcContext$$anon$1.wrap(JdbcContext.scala:31)
+	at io.getquill.context.jdbc.JdbcRunContext.$anonfun$withConnectionWrapped$1(JdbcRunContext.scala:29)
+	at io.getquill.context.jdbc.JdbcContext.$anonfun$withConnection$1(JdbcContext.scala:62)
+	at scala.Option.getOrElse(Option.scala:201)
+	at io.getquill.context.jdbc.JdbcContext.withConnection(JdbcContext.scala:60)
+	at io.getquill.context.jdbc.JdbcRunContext.withConnectionWrapped(JdbcRunContext.scala:29)
+	at io.getquill.context.jdbc.JdbcRunContext.withConnectionWrapped$(JdbcRunContext.scala:28)
+	at io.getquill.context.jdbc.JdbcContext.withConnectionWrapped(JdbcContext.scala:14)
+	at io.getquill.context.jdbc.JdbcRunContext.executeActionReturning(JdbcRunContext.scala:50)
+	at io.getquill.context.jdbc.JdbcRunContext.executeActionReturning$(JdbcRunContext.scala:49)
+	at io.getquill.context.jdbc.JdbcContext.executeActionReturning(JdbcContext.scala:44)
+	at com.loosemond.orderservice.database.ProductsRepository.$anonfun$create$1(ProductsRepository.scala:38)
+	at flatMap @ com.loosemond.orderservice.OrderserviceRoutes$$anonfun$productRoutes$1.$anonfun$applyOrElse$1(OrderserviceRoutes.scala:21)
+	at map @ fs2.internal.CompileScope.$anonfun$close$9(CompileScope.scala:246)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$6(CompileScope.scala:245)
+	at map @ fs2.internal.CompileScope.fs2$internal$CompileScope$$traverseError(CompileScope.scala:222)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$4(CompileScope.scala:244)
+	at map @ fs2.internal.CompileScope.fs2$internal$CompileScope$$traverseError(CompileScope.scala:222)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$2(CompileScope.scala:242)
+	at flatMap @ fs2.internal.CompileScope.close(CompileScope.scala:241)
+	at rethrow$extension @ fs2.Stream$Compiler$.$anonfun$compile$2(Stream.scala:4225)
+	at unsafeRunSync @ com.loosemond.orderservice.ItemSpecSpec.createItem(ItemSpec.scala:64)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$openAncestor$2(CompileScope.scala:261)
+	at flatMap @ fs2.internal.FreeC$.$anonfun$compile$17(Algebra.scala:545)
+	at map @ fs2.internal.CompileScope.$anonfun$close$9(CompileScope.scala:246)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$6(CompileScope.scala:245)
+	at map @ fs2.internal.CompileScope.fs2$internal$CompileScope$$traverseError(CompileScope.scala:222)
+	at flatMap @ fs2.internal.CompileScope.$anonfun$close$4(CompileScope.scala:244)
+</failure>
                     </testcase>
           <system-out><![CDATA[]]></system-out>
           <system-err><![CDATA[]]></system-err>

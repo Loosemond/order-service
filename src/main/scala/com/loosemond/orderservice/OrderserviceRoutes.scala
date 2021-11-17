@@ -50,7 +50,7 @@ object OrderserviceRoutes {
     HttpRoutes.of[F] {
       case request @ POST -> Root / "items" =>
         for {
-          item <- request.as[Item]
+          item <- request.as[ItemDTO]
 
           createdItemE <- items.create(item)
           // productById <- product2.findById(item.id.)
