@@ -15,18 +15,14 @@ class ItemsRepository[F[_]: Sync] extends Items[F] {
   val items: ctx.Quoted[EntityQuery[ItemDTO]] = quote {
     querySchema[ItemDTO](
       "items",
-      // _.id -> "id",
-      _.price -> "price",
       _.product -> "product_id",
-      _.shippingFee -> "shipping_fee",
-      _.price -> "price"
+      _.shippingFee -> "shipping_fee"
     )
   }
 
   val products: ctx.Quoted[EntityQuery[Product]] = quote {
     querySchema[Product](
       "products",
-      // _.id -> "id",
       _.name -> "name",
       _.category -> "category",
       _.weight -> "weight",
@@ -36,15 +32,10 @@ class ItemsRepository[F[_]: Sync] extends Items[F] {
   }
 
   override def create(item: ItemDTO): F[Either[ItemMessage, Item]] = {
-    // ???
-    // val itemDb: ItemDb = ItemDb(
-    //   name = item.name,
-    //   category = item.category,
-    //   weight = item.weight,
-    //   price = item.price,
-    //   creationDate = item.getCreationDate()
-    // )
     Sync[F].delay {
+      val product: Product =
+        ctx.run(products.filter(_.id.contains(lift(item.id)))).head
+
       ctx
         .run(
           items
@@ -57,15 +48,8 @@ class ItemsRepository[F[_]: Sync] extends Items[F] {
           Right(
             Item(
               id = Some(uiid),
-              product = Product(
-                name = s"shoe",
-                category = "clothes",
-                weight = 0.300,
-                price = 49.99,
-                creationDate = "10-11-2021"
-              ),
-              shippingFee = item.shippingFee,
-              price = item.price
+              product = product,
+              shippingFee = item.shippingFee
             )
           )
         }
@@ -82,25 +66,21 @@ class ItemsRepository[F[_]: Sync] extends Items[F] {
   }
 
   override def findById(id: String): F[Either[ItemMessage, Item]] = {
-    // ???
     fromUUID(id)
       .map { id =>
         Sync[F].delay {
-          //   ctx.run(items.filter(a => a.id.contains(lift(id))).flatMap(b => products.filter(c => c.id == b.id))) match {
-          // ctx.run(items.join(products).on(_.id == _.id)) match {
           ctx.run(items.filter(a => a.id.contains(lift(id)))) match {
             // case Seq(item) => Right(item)
             case Seq(item: ItemDTO) =>
               ctx.run(
                 products.filter(a => a.id.contains(lift(item.product)))
               ) match {
-                case Seq(recProduct) =>
+                case Seq(recProduct: Product) =>
                   Right(
                     Item(
                       id = item.id,
                       product = recProduct,
-                      shippingFee = item.shippingFee,
-                      price = item.price
+                      shippingFee = item.shippingFee
                     )
                   )
                 case _ =>
@@ -139,9 +119,10 @@ class ItemsRepository[F[_]: Sync] extends Items[F] {
           itemList = itemList.appended(
             Item(
               id = l.id,
-              product = productList.filter(p => p.id.contains(l.product)).head,
-              shippingFee = l.shippingFee,
-              price = l.price
+              product = productList
+                .filter(p => p.id.contains(l.product))
+                .head,
+              shippingFee = l.shippingFee
             )
           )
         )

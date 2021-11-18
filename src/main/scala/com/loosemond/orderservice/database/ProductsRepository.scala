@@ -15,7 +15,6 @@ class ProductsRepository[F[_]: Sync] extends Products[F] {
   val products: ctx.Quoted[EntityQuery[Product]] = quote {
     querySchema[Product](
       "products",
-      // _.id -> "id",
       _.name -> "name",
       _.category -> "category",
       _.weight -> "weight",
@@ -25,14 +24,6 @@ class ProductsRepository[F[_]: Sync] extends Products[F] {
   }
 
   override def create(product: Product): F[Either[ProductMessage, Product]] = {
-    // ???
-    // val productDb: ProductDb = ProductDb(
-    //   name = product.name,
-    //   category = product.category,
-    //   weight = product.weight,
-    //   price = product.price,
-    //   creationDate = product.getCreationDate()
-    // )
     Sync[F].delay {
       ctx
         .run(

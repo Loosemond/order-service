@@ -98,9 +98,12 @@ object Items {
       id: Option[UUID] = None,
       product: Product,
       shippingFee: Double,
-      price: Double
+      var price: Double = 0,
+      var tax: Double = 0
   ) {
-    var tax: Double = price * 0.23 // TODO make a variable for tax rate!!!
+    price = product.price // Must be in this order! price then tax
+    tax = price * 0.23 // TODO make a variable for tax rate!!!
+
     def totalPrice(): Double = tax + shippingFee + price
 
   }
@@ -108,8 +111,8 @@ object Items {
   case class ItemDTO(
       id: Option[UUID] = None,
       product: UUID,
-      shippingFee: Double,
-      price: Double
+      shippingFee: Double
+      // price: Double
   ) {}
 
   case class ItemMessage(message: String)
@@ -148,8 +151,6 @@ object Items {
 
   object ItemDTO {
     implicit val itemDecoder: Decoder[ItemDTO] = deriveDecoder[ItemDTO]
-
-    // implicit val itemDecoder2: Decoder[Product] = deriveDecoder[Product]
 
     implicit def itemEntityDecoder[F[_]: Sync]: EntityDecoder[F, ItemDTO] =
       jsonOf

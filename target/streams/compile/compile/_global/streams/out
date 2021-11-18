@@ -1,15 +1,27 @@
-[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:49:13: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:37:16: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m        ctx.run(products.filter(_.id.contains(lift(item.id)))).head[0m
+[0m[[0m[0minfo[0m] [0m[0m               ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:40:13: Dynamic query[0m
 [0m[[0m[0minfo[0m] [0m[0m        .run([0m
 [0m[[0m[0minfo[0m] [0m[0m            ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:91:18: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:72:18: Dynamic query[0m
 [0m[[0m[0minfo[0m] [0m[0m          ctx.run(items.filter(a => a.id.contains(lift(id)))) match {[0m
 [0m[[0m[0minfo[0m] [0m[0m                 ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:94:22: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:75:22: Dynamic query[0m
 [0m[[0m[0minfo[0m] [0m[0m              ctx.run([0m
 [0m[[0m[0minfo[0m] [0m[0m                     ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:134:34: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:114:34: Dynamic query[0m
 [0m[[0m[0minfo[0m] [0m[0m        val itemDTOList = ctx.run(items)[0m
 [0m[[0m[0minfo[0m] [0m[0m                                 ^[0m
-[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:135:49: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ItemsRepository.scala:115:49: Dynamic query[0m
 [0m[[0m[0minfo[0m] [0m[0m        val productList: List[Product] = ctx.run(products)[0m
 [0m[[0m[0minfo[0m] [0m[0m                                                ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ProductsRepository.scala:29:13: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m        .run([0m
+[0m[[0m[0minfo[0m] [0m[0m            ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ProductsRepository.scala:60:18: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m          ctx.run(products.filter(_.id.contains(lift(id)))) match {[0m
+[0m[[0m[0minfo[0m] [0m[0m                 ^[0m
+[0m[[0m[0minfo[0m] [0m[0m/home/joao/Documents/Work/order-service/src/main/scala/com/loosemond/orderservice/database/ProductsRepository.scala:82:14: Dynamic query[0m
+[0m[[0m[0minfo[0m] [0m[0m      ctx.run(products)[0m
+[0m[[0m[0minfo[0m] [0m[0m             ^[0m

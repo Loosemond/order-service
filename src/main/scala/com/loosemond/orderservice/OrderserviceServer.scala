@@ -6,12 +6,8 @@ import org.http4s.implicits._
 import org.http4s.server.blaze.BlazeServerBuilder
 import org.http4s.server.middleware.Logger
 import scala.concurrent.ExecutionContext.global
-// import com.loosemond.orderservice.domain.Products
-// import com.loosemond.orderservice.domain.Items
 import cats.syntax.all._
-// import com.loosemond.orderservice.database.Migrations
 import com.loosemond.orderservice.database._
-// import com.comcast.ip4s._
 
 object OrderserviceServer {
 

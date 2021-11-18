@@ -27,8 +27,7 @@ class ItemSpecSpec extends CatsEffectSuite {
         Items.ItemDTO(
           product = UUID
             .fromString("d91e210f-daef-4ccf-9609-6d50fe548ab0"),
-          shippingFee = 2.3,
-          price = 20.2
+          shippingFee = 2.3
         )
       )
     val createdItem: IO[Item] = createdItemResponse.as[Item]
